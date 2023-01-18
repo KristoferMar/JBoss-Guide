@@ -20,3 +20,9 @@ $ ${JBOSS_HOME}/bin/standalone.sh
 - Interrupt the server instance (or host controller) process using Ctrl+C
 - Kill the server instance (or host controller) process using the kill command (Unix and OS X) or a GUI task manager.
 - Use the management CLI (shown later in this student guide.)
+
+# 
+
+# Managing JBoss EAP
+
+link here
