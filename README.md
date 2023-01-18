@@ -2,6 +2,7 @@
 Guide, tips and tricks on how to navigate JBoss EAP 7.
 
 ## Red Hat JBoss Enterprise Application Platform: Architecture and Features
+https://github.com/KristoferMar/JBoss-Guide/tree/main/1.jboss_configuration
 
 ## Configuring JBoss EAP as a Standalone Server
 
