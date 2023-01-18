@@ -5,6 +5,7 @@ Guide, tips and tricks on how to navigate JBoss EAP 7.
 https://github.com/KristoferMar/JBoss-Guide/tree/main/1.jboss_configuration
 
 ## Configuring JBoss EAP as a Standalone Server
+link
 
 ## Scripting Configuration and Deploying Applications
 
