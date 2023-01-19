@@ -64,3 +64,12 @@ We can inspect the MySQL JDBC driver in the following way.
 <pre>
 [standalone@localhost:9990 /] /subsystem=datasources/jdbc-driver=mysql:read-resource
 </pre>
+
+
+# Extras
+
+## Scripted JDBC driver installation
+The following is an example of how to install a JDBC driver through scripting 
+<pre>
+./jboss-cli.sh -c --command="module add --name=org.mysql --resources=/home/user/mysql-connector-java-5.1.18-bin.jar  --dependencies=javax.api,javax.transaction.api"
+</pre>
