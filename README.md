@@ -8,6 +8,8 @@ https://github.com/KristoferMar/JBoss-Guide/tree/main/1.jboss_configuration
 https://github.com/KristoferMar/JBoss-Guide/tree/main/2.configure_jboss_eap_as_standalone
 
 ## Scripting Configuration and Deploying Applications
+- CLI operations such as restart, remove, and more
+
 https://github.com/KristoferMar/JBoss-Guide/tree/main/3.configure_deploying_applications
 
 ## Configuring JBoss EAP as a Managed Domain

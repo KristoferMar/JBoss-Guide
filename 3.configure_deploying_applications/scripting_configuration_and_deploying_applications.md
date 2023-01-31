@@ -1,71 +1,30 @@
 # Scripting Configuration and Deploying Applications
 
-We start an EAP standalone server using standalone2 and then verify it's running
-<pre>
-[student@workstation ~]$ cd /opt/jboss-eap-7.0/bin
-[student@workstation bin]$ sudo -u jboss ./standalone.sh \
--Djboss.server.base.dir=/opt/jboss/standalone2/
-</pre>
+## Executing commands
 
-We open a new terminal window and connect to it
-<pre>
-[student@workstation ~]$ cd /opt/jboss-eap-7.0/bin
-[student@workstation bin]$ sudo -u jboss ./jboss-cli.sh -c --controller=localhost:9990
-</pre>
+### Operations
+The following operations are very common
+• :read-resource: Reads a model resource's attribute values and either basic or complete
+information about any child resources.
+• :read-operation-names: Gets the names of all the operations for the given resource.
+• :read-operation-description: Gets the description of given operation.
+• :reload: Reloads the server by shutting down all its services and starting them again. The JVM
+itself is not restarted.
+• :read-attribute: Gets the value of an attribute for the selected resource.
+• :write-attribute: Sets the value of an attribute for the selected resource.
+• :remove: Removes the node.
 
-We navigate to socket-binding 
-<pre>
-[standalone@localhost:9990 /] cd /socket-binding-group=standard-sockets
-</pre>
-
-We navigate to socket binding called "http"
-<pre>
-[standalone@localhost:9990 socket-binding-group=standard-sockets] cd \
-socket-binding=http
-</pre>
-
-We change the port attribute to 8081
-<pre>
-[standalone@localhost:9990 socket-binding=http] :write-attribute\
-(name=port,value=8081)
-</pre>
-
-We read the resource properties to the socket binding.
-<pre>
-[standalone@localhost:9990 socket-binding=http] :read-resource
-</pre>
-
-We reload the standalone server to start listening on port 8081
-<pre>
-[standalone@localhost:9990 socket-binding=http] cd /
-[standalone@localhost:9990 /] :reload
-</pre>
-<br><br>
-
-
-## Change the log level
-
-<pre>
-[standalone@localhost:9990 /] cd /subsystem=logging/console-handler=CONSOLE
-</pre>
-
-Change level to INFO
-<pre>
-[standalone@localhost:9990 console-handler=CONSOLE] :write-attribute\
-(name=level,value=INFO)
-</pre>
-
-Read the resource properties of the CONSOLE console handler
-<pre>
-[standalone@localhost:9990 console-handler=CONSOLE] :read-resource
-</pre>
-<br><br>
-
-
-## Deploy the application
-We use the deploy command
-<pre>
-[standalone@localhost:9990 console-handler=CONSOLE] cd /
-[standalone@localhost:9990 /] deploy \
-/tmp/bookstore.war 
-</pre>
+### Commands
+Commands contains a user friendly syntax and most of them translate into operation requests.
+The following commands are the most basic supported commands for the CLI
+• cn or cd: Change the current node path to the argument.
+• connect: Connect to the server or domain controller.
+• data-source: Used to manage resources of type /subsystem=datasources/data-source.
+• deploy: Deploy an application.
+• help: Display the help page.
+• history: Print or disable,enable, or clear the history expansion;
+• ls: list the contents of the node path.
+• pwn or pwd: Prints the current working node.
+• exit or quit: Quit the command line interface.
+• undeploy: Undeploy an application.
+• version: Prints the version and environment information.
