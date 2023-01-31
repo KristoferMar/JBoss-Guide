@@ -13,7 +13,7 @@ JBOSS_HOME/standalone/configuration/standalone.xml
 - Any jar, war or ear file you copy to this directory will be automatically deployed to the server an avaiable application.
 
 ### JBOSS_HOME/standalone/configuration/lib
-- is used for deploying common JAR files. 
+- is used for deploying common JAR files.
 
 ## JBOSS_HOME/standalone/data
 - data: a location available to subsystems that store content in the file system, such as message queue or an in-memory database.

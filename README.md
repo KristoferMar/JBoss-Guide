@@ -5,9 +5,10 @@ Guide, tips and tricks on how to navigate JBoss EAP 7.
 https://github.com/KristoferMar/JBoss-Guide/tree/main/1.jboss_configuration
 
 ## Configuring JBoss EAP as a Standalone Server
-link
+https://github.com/KristoferMar/JBoss-Guide/tree/main/2.configure_jboss_eap_as_standalone
 
 ## Scripting Configuration and Deploying Applications
+https://github.com/KristoferMar/JBoss-Guide/tree/main/3.configure_deploying_applications
 
 ## Configuring JBoss EAP as a Managed Domain
 
