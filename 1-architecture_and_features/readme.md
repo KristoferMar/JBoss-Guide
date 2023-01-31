@@ -1,4 +1,10 @@
-# Installing JBoss EAP
+# Red Hat JBoss Enterprise Application Platform: Architecture and Features
+
+## Understanding Extensions, Subsystems, and Profiles
+
+##
+
+##
 
 Installation link
 https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&product=appplatform&version=7.4

@@ -1,3 +1,4 @@
+# Understanding Extensions, Subsystems, and Profiles
 ## JBoss modules 
 JBoss Modules is designed to work with any existing library or application without changes, and its simple naming and resolution strategy is what makes that possible. 
 
