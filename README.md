@@ -10,11 +10,14 @@ https://github.com/KristoferMar/JBoss-Guide/tree/main/2.configure_jboss_eap_as_s
 ## Scripting Configuration and Deploying Applications
 https://github.com/KristoferMar/JBoss-Guide/tree/main/3.configure_deploying_applications
 
+https://github.com/KristoferMar/JBoss-Guide/tree/main/3.configure_deploying_applications
+
 ## Configuring JBoss EAP as a Managed Domain
 
 ## Configuring Servers in a Managed Domain
 
 ## Configuring Data Sources
+https://github.com/KristoferMar/JBoss-Guide/tree/main/6.configure_data_source
 
 ## Configuring the Logging Subsystem
 
